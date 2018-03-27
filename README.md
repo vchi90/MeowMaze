@@ -16,7 +16,7 @@
              
   Recursive case: If there is a split, invoke recursive abstraction for each of the paths.
   
-## version*n* wishlist
+## Version *n* Wishlist
   - All solutions.
   
   - Shortest path.
