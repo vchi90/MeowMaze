@@ -2,6 +2,7 @@
   To meow a maze is to solve a maze.
 ## Statement of Problem
   To find the boolean value to the statement:
+  
   "There exists one path through a maze starting at a designated beginning that ends at the treasure".
 ## Personnel
   Vincent Chi, En Yu Zhang
