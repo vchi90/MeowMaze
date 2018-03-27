@@ -11,7 +11,7 @@
 ## English Algorithm and/or Pseudocode.
   Base case: if treasure found {solved}. (Snapshot(?))
              
-  else {backtrack}. Somehow find if maze has been thoroughly traversed and failed if so, then return false.
+  - else {backtrack}. Somehow find if maze has been thoroughly traversed and failed if so, then return false.
              
   Recursive case: If there is a split, invoke recursive abstraction for each of the paths.
   
