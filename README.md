@@ -10,12 +10,17 @@
   The recursive abstraction can check for a treasure throughout a given path (or direction).
   
 ## English Algorithm and/or Pseudocode.
-  Base case: if treasure found {solved}. (Snapshot(?))
-             
-  - else {backtrack}. Somehow find if maze has been thoroughly traversed and failed if so, then return false.
-             
-  Recursive case: If there is a split, invoke recursive abstraction for each of the paths.
+  Base case: After traversing through the entire maze,
   
+  - if treasure found {solved, return true}. Snapshot(?)
+             
+  - else {no treasure is found, return false}.
+             
+  Recursive case: If there is a split, invoke recursive abstraction for each of the paths. (Backtracking occurs here.)
+  
+## Class(es), with Fields and Methods
+"The content of the "class(es)" section will probably remain null today, until until your partnership has had a chance to meet and agree on your algorithm, probably in class Wednesday."
+
 ## Version *n* Wishlist
   - All solutions.
   
