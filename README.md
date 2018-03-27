@@ -4,8 +4,7 @@
   To find the boolean value to the statement:
   "There exists one path through a maze starting at a designated beginning that ends at the treasure".
 ## Personnel
-  Vincent Chi
-  En Yu Zhang
+  Vincent Chi, En Yu Zhang
 ## Recursive Abstraction
   The recursive abstraction can check for a treasure throughout a given path (or direction).
   
