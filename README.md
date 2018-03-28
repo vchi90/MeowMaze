@@ -7,16 +7,18 @@
 ## Personnel
   Vincent Chi, En Yu Zhang
 ## Recursive Abstraction
-  The recursive abstraction can check for a treasure throughout a given path (or direction).
+  The recursive abstraction can mark a stepping stone for backtracking.
   
 ## English Algorithm and/or Pseudocode.
-  Base case: After traversing through the entire maze,
+  Base case: Traverses through a path in a single direction.
   
-  - if treasure found {solved, return true}. Snapshot(?)
+  - if treasure found {solved, return true}.
              
-  - else {no treasure is found, return false}.
+  - if no treasure here {no treasure is found, continue}.
+  
+  - if no treasure found at the end of path with no turn {invoke recursive abstraction}.
              
-  Recursive case: If there is a split, invoke recursive abstraction for each of the paths. (Backtracking occurs here.)
+  Recursive case: If there is a split, invoke recursive abstraction. (Backtracking occurs here.)
   
 ## Class(es), with Fields and Methods
 "The content of the "class(es)" section will probably remain null today, until until your partnership has had a chance to meet and agree on your algorithm, probably in class Wednesday."
@@ -25,3 +27,5 @@
   - All solutions.
   
   - Shortest path.
+
+  - Snapshot(?)
