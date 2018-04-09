@@ -15,14 +15,17 @@
   
   - if treasure found {solved, return true;}.
   
-  - if all stepping stones are marked {return false;}.
+  - if all stepping stones are marked {return false;}. In the case that no path is available (wall spawn), also return false;
 ## English Algorithm and/or Pseudocode.
+Given a maze problem, the solver method will first check for the base cases:
   Base case:
   
   - if treasure found {solved, return true;}.
   
-  - if all stepping stones are marked {return false;}.
-             
+  - if all stepping stones are marked {return false;}. In the case that no path is available (wall spawn), also return false;
+  
+  and if none apply, then apply the recursive case:
+  
   Recursive case: If there is a split, invoke recursive abstraction. (See recursive abstraction.)
   
 ## Class(es), with Fields and Methods
