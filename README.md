@@ -5,17 +5,19 @@
 ## Statement of Problem
   To find the boolean value to the statement:
   
-  "There exists one path through a maze starting at a designated beginning that ends at the treasure".
+  "There exists an accessible treasure".
 ## Recursive Abstraction
-  When I'm asked to traverse a maze to find a treasure, the recursive abstraction can identify the possible paths and take a step, marking the stepping stone for backtracking as well as preventing repetition. (Put a wall on your steps..?)
+  When I'm asked to traverse a maze to find a treasure, the recursive abstraction can identify the possible paths and take a step, putting a wall behind me.
   
-  If no possible steps are found, backtrack.
+  If there are more than one possible steps, take snapshots to refer to.
 ## Base Cases
   Base case:
   
-  - if treasure found {solved, return true;}.
+  - if treasure found {solved, return true;}. (explorer on treasure)
   
-  - if all stepping stones are marked {return false;}. In the case that no path is available (wall spawn), also return false;
+  - if no possible paths and unused snapshots {return false;}.
+  
+  - if wall spawn, also return false;
 ## English Algorithm and/or Pseudocode.
 Given a maze problem, the solver method will first check for the base cases:
 
