@@ -36,7 +36,7 @@ Given a maze problem, the solver method will first check for the base cases:
   The end product should be a solved maze.
   
 ## Class(es), with Fields and Methods
-  Maze class: Double integer array maze. Treasure. Explorer. Wall. Stepping stone. Directions. toString.
+  Maze class: Double integer array maze. Treasure. Explorer. Wall. Stepping stone. Directions. toString. isLegal
   
   Maze solver class: Traversing method that includes everything above is in here.
 
