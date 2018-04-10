@@ -23,9 +23,11 @@ Given a maze problem, the solver method will first check for the base cases:
 
   Base case:
   
-  - if treasure found {solved, return true;}.
+  - if treasure found {solved, return true;}. (explorer on treasure)
   
-  - if all stepping stones are marked {return false;}. In the case that no path is available (wall spawn), also return false;
+  - if no possible paths and unused snapshots {return false;}.
+  
+  - if wall spawn, also return false;
   
   and if none apply, then apply the recursive case:
   
