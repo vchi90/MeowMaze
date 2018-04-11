@@ -9,15 +9,14 @@
 ## Recursive Abstraction
   When I'm asked to traverse a maze to find a treasure, the recursive abstraction can identify the possible paths and take a step, putting a wall behind me.
   
-  If there are more than one possible steps, take snapshots to refer to.
+  If there are more than one possible steps, take snapshots to refer to in backtracking.
 ## Base Cases
   Base case:
   
-  - if treasure found {solved, return true;}. (explorer on treasure)
+  - if (explorer) on treasure {solved, return true;}. 
   
-  - if no possible paths and unused snapshots {return false;}.
+  - if (explorer) on wall {return false;}.
   
-  - if wall spawn, also return false;
 ## English Algorithm and/or Pseudocode.
 Given a maze problem, the solver method will first check for the base cases:
 
