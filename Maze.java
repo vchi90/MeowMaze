@@ -88,12 +88,9 @@ public class Maze {
     public Maze( Maze old) {
 
         // Copy the explorer's position (code by Holmes is asserted to work)
-        explorerPosition = new Vector( old.explorerPosition); 
+        explorerPosition = new Vector( old.explorerPosition);
+	maze = old.maze.clone(); 
         rankCount = old.rankCount; 
-        maze = new int [MAX_RANKS][]; 
-        for (int rankPos = 0; rankPos < rankCount; rankPos++) {
-                maze [rankPos] = old.maze[rankPos];
- 
     }
         } 
     /**
