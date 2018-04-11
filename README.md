@@ -48,7 +48,5 @@ else {
   
   - Shortest path.
 
-  - Snapshot(?)
-
 ## Known Bugs
   - 64 Max Maze Size
