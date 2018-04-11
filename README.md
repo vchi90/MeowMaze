@@ -34,6 +34,7 @@ else {
         }
     if no path {
         check for available snapshots (or untaken paths previously).
+        }
     apply recursive abstraction
     }
 ```
