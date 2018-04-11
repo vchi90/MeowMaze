@@ -23,14 +23,19 @@ Given a maze problem, the solver method will first check for the base cases:
 ```java
 if explorer on treasure {
     return true;
-}
+    }
 else if explorer on wall {
     return false;
-}
+    }
 else {
-    check directions, if more than 1 possible path, take snapshot.
+    check directions,
+    if more than 1 possible path, {
+        take snapshot;
+        }
+    if no path {
+        check for available snapshots (or untaken paths previously).
     apply recursive abstraction
-}
+    }
 ```
 
   The end product should be a solved maze.
