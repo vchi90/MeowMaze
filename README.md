@@ -21,7 +21,7 @@
 ## English Algorithm and/or Pseudocode.
 Given a maze problem, the solver method will first check for the base cases:
 
-```
+```java
 if explorer on treasure {
     return true;
 }
