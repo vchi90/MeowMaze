@@ -3,11 +3,10 @@
 ## Personnel
   Vincent Chi, En Yu Zhang
 ## Statement of Problem
-  To find the boolean value to the statement: “there exists one path through a maze starting at a designated beginning and ending at treasure.”.
+  To find the boolean value to the statement: “there exists one path through a maze starting at a designated beginning and ending at treasure”.
 ## Recursive Abstraction
-  When I'm asked to traverse a maze to find a treasure, the recursive abstraction can identify the possible paths and take a step, putting a wall behind me.
-  
-  If there are more than one possible steps, take snapshots to refer to in backtracking.
+  When I'm asked to traverse a maze from a designated beginning to find a treasure, the recursive abstraction can find a possible path from a step adjacent to the starting point to the treasure. 
+
 ## Base Cases
   Base case:
   
