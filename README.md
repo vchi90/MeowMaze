@@ -39,7 +39,18 @@ else {
   The end product should be a solved maze.
   
 ## Class(es), with Fields and Methods
-  Maze class: Double integer array maze. Treasure. Explorer. Wall. Stepping stone. Directions. toString. isLegal
+  Maze class: Double integer array maze. 
+   - Treasure
+   
+   - Explorer
+   
+   - Wall
+   
+   - Stepping stone
+   
+   - Directions
+   
+   - toString
   
   Maze solver class: Traversing method that includes everything above is in here.
 
