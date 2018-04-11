@@ -21,18 +21,19 @@
 ## English Algorithm and/or Pseudocode.
 Given a maze problem, the solver method will first check for the base cases:
 
-  Base case:
-  
-  - if treasure found {solved, return true;}. (explorer on treasure)
-  
-  - if no possible paths and unused snapshots {return false;}.
-  
-  - if wall spawn, also return false;
-  
-  and if none apply, then apply the recursive case:
-  
-  Recursive case: If there is a split, invoke recursive abstraction. (See recursive abstraction.)
-  
+```
+if explorer on treasure {
+    return true;
+}
+else if explorer on wall {
+    return false;
+}
+else {
+    check directions, if more than 1 possible path, take snapshot.
+    apply recursive abstraction
+}
+```
+
   The end product should be a solved maze.
   
 ## Class(es), with Fields and Methods
