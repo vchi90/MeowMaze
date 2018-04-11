@@ -3,9 +3,7 @@
 ## Personnel
   Vincent Chi, En Yu Zhang
 ## Statement of Problem
-  To find the boolean value to the statement:
-  
-  "There exists an accessible treasure".
+  To find the boolean value to the statement: “there exists one path through a maze starting at a designated beginning and ending at treasure.”.
 ## Recursive Abstraction
   When I'm asked to traverse a maze to find a treasure, the recursive abstraction can identify the possible paths and take a step, putting a wall behind me.
   
