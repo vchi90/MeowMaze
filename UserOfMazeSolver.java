@@ -10,7 +10,9 @@ public class UserOfMazeSolver {
 
     public static void main(String[] commandLine)
        throws java.io.FileNotFoundException {
-       Maze testDummy = new Maze (commandLine[0], Integer.parseInt(commandLine[1]), Integer.parseInt(commandLine[2])); //taking it from the terminal to determine maze and the starting position
+       Maze testDummy = new Maze (commandLine[0],
+                                  Integer.parseInt(commandLine[1]),
+                                  Integer.parseInt(commandLine[2])); //terminal input to determine maze and the starting position
 
       System.out.println(MazeSolver.solveThis(testDummy));
     }
