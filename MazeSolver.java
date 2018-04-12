@@ -14,5 +14,6 @@ public class MazeSolver {
     } 
     else { //explorer must be on a stepping stone, but least that you can test is the base case, so we'll leave that out for today :)
     return false;
-    } 
-}}
+    }
+  }
+}
