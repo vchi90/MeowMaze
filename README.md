@@ -29,13 +29,13 @@ else {
     drop a wall;
     for each directions {
         move;
-         if recursive abstraction{
-         return true;
-           }
+        if recursive abstraction{
+            return true;
+            }
         else {
-        restore snapshot;
-    }
-
+            restore snapshot;
+            }
+        }
         
 
     }
