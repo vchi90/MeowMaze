@@ -6,13 +6,13 @@ public class MazeSolver {
 */
 
   public static boolean solveThis(Maze maze) {
-      if (maze.explorerIsOnA() == Maze.TREASURE) { //testing base cases
+      if (maze.explorerIsOnA() == Maze.TREASURE) { //base cases
           return true;
       }
     else if (maze.explorerIsOnA() == Maze.WALL) {
       return false;
     } 
-    else { //explorer must be on a stepping stone, but least that you can test is the base case, so we'll leave that out for today :)
+    else { //explorer must be on a stepping stone, recursive case
     return false;
     }
   }
