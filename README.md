@@ -25,14 +25,19 @@ else if explorer on wall {
     return false;
     }
 else {
-    check directions,
-    if more than 1 possible path, {
-        take snapshot;
-        }
-    if no path {
-        check for available snapshots (or untaken paths previously).
-        }
-    apply recursive abstraction
+    snapshot variable;
+    drop a wall;
+    for each directions {
+        move;
+         if recursive abstraction{
+         return true;
+           }
+        else {
+        restore snapshot;
+    }
+
+        
+
     }
 ```
 
