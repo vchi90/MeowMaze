@@ -4,7 +4,10 @@ public class MazeSolver {
 
  See README for specifics. (statement of the problem, etc)
 */
-private static int[] directions = {Maze.EAST, Maze.NORTH, Maze.SOUTH, Maze.WEST};
+private static int[] directions = {Maze.EAST,
+				   Maze.NORTH,
+				   Maze.SOUTH,
+				   Maze.WEST};
 
     private static Maze mazeToSolve;
 	
