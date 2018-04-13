@@ -66,3 +66,5 @@ else {
 
 ## Known Bugs
   - 64 Max Maze Size
+  
+  - No recursive case for the solver just yet.
