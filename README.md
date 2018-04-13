@@ -36,7 +36,6 @@ else {
             restore snapshot;
             }
         }
-        // HUGE thanks to Erik Mai for the pseudocode help. No seriously.
     }
 ```
 
