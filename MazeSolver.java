@@ -10,28 +10,27 @@ private static int[] directions = {Maze.EAST, Maze.NORTH, Maze.SOUTH, Maze.WEST}
 	
     public static boolean solveThis(Maze aMaze) {
         mazeToSolve = new Maze(aMaze);
-		return solveMaze();
+		  return solveMaze();
     }
 	
     private static boolean solveMaze() {
-
-        if (mazeToSolve.explorerIsOnA() == Maze.TREASURE) { //base cases
-          return true;
-          }
-        else if (mazeToSolve.explorerIsOnA() == Maze.WALL) {
-          return false;
+      if (mazeToSolve.explorerIsOnA() == Maze.TREASURE) { //base cases
+        return true;
         }
-        else {
-		  mazeToSolve.dropA(Maze.WALL);
-          Maze snapshot = new Maze(mazeToSolve); //using the Maze(old maze) constructor
-          for (int eachDirection : directions) {
-            mazeToSolve.go(eachDirection);
-            if (solveMaze()) {
-              return true; }
-            else {
-              mazeToSolve = new Maze(snapshot);}
+      else if (mazeToSolve.explorerIsOnA() == Maze.WALL) {
+        return false;
+        }
+      else {
+		    mazeToSolve.dropA(Maze.WALL);
+        Maze snapshot = new Maze(mazeToSolve); //using the Maze(old maze) constructor
+        for (int eachDirection : directions) {
+          mazeToSolve.go(eachDirection);
+          if (solveMaze()) {
+            return true; }
+          else {
+            mazeToSolve = new Maze(snapshot);}
             }
           }
-        return false; 
-      }
+      return false; 
+  }
 }
