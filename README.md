@@ -25,7 +25,7 @@ else if explorer on wall {
     return false;
     }
 else {
-    snapshot variable;
+    take asnapshot;
     drop a wall;
     for each directions {
         move;
@@ -36,8 +36,7 @@ else {
             restore snapshot;
             }
         }
-        
-
+        // HUGE thanks to Erik Mai for the pseudocode help. No seriously.
     }
 ```
 
