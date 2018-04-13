@@ -18,7 +18,7 @@
 Given a maze problem, the solver method will first check for the base cases:
 
 ```java
-if explorer on treasure {
+if explorer on treasure {         // HUGE thanks to Erik Mai for the pseudocode help. No seriously.
     return true;
     }
 else if explorer on wall {
