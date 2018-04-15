@@ -25,9 +25,9 @@ else if explorer on wall {
     return false;
     }
 else {
-    take a snapshot;
-    drop a wall;
     for each directions {
+        drop a wall;
+        take a snapshot;
         move;
         if recursive abstraction{
             return true;
@@ -36,6 +36,7 @@ else {
             restore snapshot;
             }
         }
+        return false;
     }
 ```
 
