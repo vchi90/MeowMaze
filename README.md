@@ -18,6 +18,9 @@
 Given a maze problem, the solver method will first check for the base cases:
 
 ```java
+if solutions > 0 {
+    return true;
+    }
 if explorer on treasure {         // HUGE thanks to Erik Mai for the pseudocode help. No seriously.
     return true;
     }
@@ -31,7 +34,7 @@ else {
         move;
         if recursive abstraction{
             solutions ++;
-            return displayer;
+            displayer;
             }
         else {
             restore snapshot;
