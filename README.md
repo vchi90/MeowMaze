@@ -22,24 +22,24 @@ int solutions == 0
 if explorer on treasure {
     return true;
     }
-else if explorer on wall && solutions > 0 {
-    return true;
-    }
-else if explorer on a wall && no solutions {
+else if explorer on wall {
     return false;
     }
 else {
-    take a snapshot;
-    drop a wall;
     for each directions {
+        drop a wall;
+        take a snapshot;
         move;
         if recursive abstraction{
-            solutions ++;
+            solutions++;
             displayer;
             }
         else {
             restore snapshot;
             }
+        }
+    if solutions > 0 {
+        return true;
         }
     }
 
