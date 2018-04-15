@@ -30,6 +30,7 @@ private static int[] directions = {Maze.EAST,
 	  mazeToSolve.dropA(Maze.WALL);
           mazeToSolve.go(eachDirection);
           if (solveMaze()) {
+	    solutions++; 
             System.out.println(mazeToSolve.toString()); }
           else {
             mazeToSolve = new Maze(snapshot);}
