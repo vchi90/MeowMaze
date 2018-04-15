@@ -22,10 +22,10 @@ int solutions == 0
 if explorer on treasure {
     return true;
     }
-else if explorer on wall && solutions > 0{
+else if explorer on wall && solutions > 0 {
     return true;
     }
-else if explorer on a wall && no solutions{
+else if explorer on a wall && no solutions {
     return false;
     }
 else {
