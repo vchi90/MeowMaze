@@ -32,7 +32,7 @@ else {
         move;
         if recursive abstraction{
             solutions++;
-            displayer;
+            display;
             }
         else {
             restore snapshot;
@@ -41,6 +41,7 @@ else {
     if solutions > 0 {
         return true;
         }
+    return false;
     }
 
 ```
