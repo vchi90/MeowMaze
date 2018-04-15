@@ -24,9 +24,9 @@ private static int[] directions = {Maze.EAST,
         return false;
         }
       else {
-	mazeToSolve.dropA(Maze.WALL);
-        Maze snapshot = new Maze(mazeToSolve); //using the Maze(old maze) constructor
         for (int eachDirection : directions) {
+	  Maze snapshot = new Maze(mazeToSolve); //using the Maze(old maze) constructor
+	  mazeToSolve.dropA(Maze.WALL);
           mazeToSolve.go(eachDirection);
           if (solveMaze()) {
             return true; }
