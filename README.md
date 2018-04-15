@@ -70,6 +70,8 @@ else {
 
 ## Known Bugs
   - 64 Max Maze Size
+  
+  - toString repeats itself on a single solution.
  
-## v1
-- solved maze is now displayed
+## v1 (All solutions patch)
+- Attempt to implement toString to display all the solutions.
