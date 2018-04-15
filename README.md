@@ -18,13 +18,14 @@
 Given a maze problem, the solver method will first check for the base cases:
 
 ```java
-if solutions > 0 {
+int solutions == 0
+if explorer on treasure {
     return true;
     }
-if explorer on treasure {         // HUGE thanks to Erik Mai for the pseudocode help. No seriously.
+else if explorer on wall && solutions > 0{
     return true;
     }
-else if explorer on wall {
+else if explorer on a wall && no solutions{
     return false;
     }
 else {
@@ -41,6 +42,7 @@ else {
             }
         }
     }
+
 ```
 
   The end product should be a solved maze.
