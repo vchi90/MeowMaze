@@ -16,7 +16,7 @@ private static int[] directions = {Maze.EAST,
 		  return solveMaze();
     }
 	
-    private static int solutions == 0;
+    private static int solutions = 0;
     private static boolean solveMaze() {
       if (mazeToSolve.explorerIsOnA() == Maze.TREASURE) { //base cases
         return true;
@@ -30,13 +30,15 @@ private static int[] directions = {Maze.EAST,
 	  mazeToSolve.dropA(Maze.WALL);
           mazeToSolve.go(eachDirection);
           if (solveMaze()) {
-            System.out.println(maze.toString()); }
+            System.out.println(mazeToSolve.toString()); }
           else {
             mazeToSolve = new Maze(snapshot);}
             }
           }
       if (solutions > 0) {
           return true;
-          }		  
+          }
+      return false;		  
   }
 }
+
