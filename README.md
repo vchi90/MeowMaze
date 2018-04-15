@@ -3,7 +3,7 @@
 ## Personnel
   Vincent Chi, En Yu Zhang
 ## Statement of Problem
-  To find the boolean value to the statement: “there exists one path through a maze starting at a designated beginning and ending at treasure”.
+  To find the boolean value to the statement: “there exists one or more paths through a maze starting at a designated beginning and ending at multiple treasures”.
 ## Recursive Abstraction
   When I'm asked to traverse a maze from a designated beginning to find a treasure, the recursive abstraction can find a possible path from a step adjacent to the starting point to the treasure. 
 
@@ -30,7 +30,8 @@ else {
     for each directions {
         move;
         if recursive abstraction{
-            return true;
+            solutions ++;
+            return displayer;
             }
         else {
             restore snapshot;
@@ -58,7 +59,6 @@ else {
   Maze solver class: Traversing method that includes everything above is in here.
 
 ## Version *n* Wishlist
-  - All solutions.
   
   - Shortest path.
 
