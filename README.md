@@ -69,3 +69,6 @@ else {
 
 ## Known Bugs
   - 64 Max Maze Size
+ 
+## v1
+- solved maze is now displayed
